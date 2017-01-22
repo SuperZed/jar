@@ -1,10 +1,13 @@
-package com.example.demo;
+package com.example.demo.activity;
 
 import android.os.Bundle;
 import android.view.View;
 
+import com.example.demo.BannerLoaderImage;
+import com.example.demo.R;
 import com.plugin.library.banner.Banner;
 import com.plugin.library.banner.listener.OnBannerClickListener;
+import com.plugin.library.view.ToastBar;
 import com.plugin.library.view.switchbutton.SwitchIcon;
 import com.plugin.library.view.titlebar.TitleBar;
 
@@ -15,7 +18,7 @@ import java.util.List;
  * Created by xiezh on 2017/1/20.
  */
 
-public class TestActivity extends BaseActivity implements OnBannerClickListener {
+public class TestActivity extends BaseSwipeActivity implements OnBannerClickListener {
 
     private List<String> imgUrl = new ArrayList<>();
     private List<String> titles = new ArrayList<>();
@@ -29,6 +32,7 @@ public class TestActivity extends BaseActivity implements OnBannerClickListener 
         setContentView(R.layout.activity_test);
         mTitleBar= (TitleBar) findViewById(R.id.title_bar);
         mTitleBar.setTitle("标题");
+
         mSwitchIcon = (SwitchIcon) findViewById(R.id.switchIcon);
         mSwitchIcon.setOnClickListener(new View.OnClickListener() {
             @Override

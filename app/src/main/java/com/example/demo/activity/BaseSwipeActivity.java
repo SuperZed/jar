@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.example.demo.activity;
 
 import android.os.Bundle;
 import android.support.annotation.FloatRange;
@@ -6,6 +6,7 @@ import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 
+import com.example.demo.App;
 import com.plugin.library.swipeback.SlideBackHelper;
 import com.plugin.library.swipeback.SlideConfig;
 import com.plugin.library.swipeback.callbak.OnSwipeListener;
@@ -15,7 +16,7 @@ import com.plugin.library.swipeback.widget.SlideBackLayout;
  * Created by xiezh on 2017/1/20.
  */
 
-public class BaseActivity extends AppCompatActivity {
+public class BaseSwipeActivity extends AppCompatActivity {
 
     protected SlideBackLayout mSlideBackLayout;
 
